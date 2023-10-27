@@ -1,0 +1,61 @@
+/* selectors */
+
+body {
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.paragraph {
+    color: darkolivegreen;
+    border: 1rem;
+}
+
+#third-paragraph {
+    color: purple;
+}
+
+#fourth , .gray {
+    color: gray;
+}
+
+article p {
+    color: green;
+}
+
+article > p {
+    color: yellow;
+}
+
+* {
+    font-family: monospace;
+}
+
+p {
+    font-size: 1.2rem;
+    color: darkblue;
+    &:hover {
+        background-color:lightblue;
+    }
+}
+
+/* p {
+    font-size: 1.2rem; 
+    color: darkblue;
+}
+
+p:hover {
+    background-color:lightblue;
+} */
+
+/* h1 + h2 {
+    font-size: larger;
+    border: 2px dashed red;
+} */
+
+h1:has(+ h2) {
+    color: teal;
+}
+
+article:has(ul) {
+    border: 2px dashed palevioletred;
+}
